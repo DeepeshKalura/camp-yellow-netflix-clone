@@ -14,6 +14,7 @@ This project aims to replicate the user interface of the popular streaming platf
 - State management with BLoC (Business Logic Component).
 - Easily customizable to add more features or expand functionality.
 
+
 ## Installation
 
 Before getting started with this project, ensure that you have Flutter and Dart installed on your system. If you haven't already, you can follow the official Flutter installation guide: [Flutter Installation](https://flutter.dev/docs/get-started/install)
@@ -41,7 +42,6 @@ flutter pub get
 ```bash
 flutter run
 ```
-
 ## Project Structure
 
 The project is organized into several directories, each serving a specific purpose:
@@ -55,6 +55,14 @@ The project is organized into several directories, each serving a specific purpo
 - **assets**: Store image assets, fonts, and other resources used in the app.
 - **test**: Contains unit tests for the application (if applicable).
 
+## Project Images
+
+![Home Screen](./assets/app/home_screen.png)
+
+
+![episode Screen](./assets/app/episode_screen.png)
+
+![more detal screen](./assets/app/more_detail_screen.png)
 ## How to Customize
 
 To customize this Netflix clone for your own purposes, you can:
