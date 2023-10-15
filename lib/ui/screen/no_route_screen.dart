@@ -9,10 +9,10 @@ class NoRouteScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('No Route Found'),
       ),
-      body: const Center(
+      body: Center(
         child: Text(
           '404 - No Route Found',
-          style: TextStyle(fontSize: 24),
+          style: Theme.of(context).textTheme.titleSmall,
         ),
       ),
     );
