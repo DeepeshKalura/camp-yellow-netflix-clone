@@ -7,106 +7,53 @@ class AboutEpisodeWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        SizedBox(
-          width: 91,
-          height: 13,
-          child: Text(
-            'S6:E1 “Solaricks”',
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 11,
-              fontFamily: 'Libre Franklin',
-              fontWeight: FontWeight.w600,
-              height: 0,
-            ),
-          ),
+        Text('S6:E1 “Solaricks”', style: Theme.of(context).textTheme.bodySmall),
+        const SizedBox(height: 10),
+        Text(
+          'They’re back... and right where we left ‘em. Without a portal gun, Rick and Morty are stranded as they float through space in the ruins of the Citadel.',
+          style: Theme.of(context).textTheme.bodySmall!.copyWith(
+                fontWeight: FontWeight.w500,
+                height: 1.2,
+                fontSize: 11,
+              ),
         ),
-        SizedBox(
-          width: 350,
-          height: 39,
-          child: Text(
-            'They’re back... and right where we left ‘em. Without a portal gun, Rick and Morty are stranded as they float through space in the ruins of the Citadel.',
-            style: TextStyle(
-              color: Color(0xFFF9F9F9),
-              fontSize: 11,
-              fontFamily: 'Libre Franklin',
-              fontWeight: FontWeight.w500,
-              height: 0,
+        const SizedBox(height: 5),
+        Row(
+          children: [
+            Text(
+              'Starring:',
+              style: Theme.of(context).textTheme.bodySmall,
             ),
-          ),
+            const SizedBox(width: 10),
+            Text(
+              'Justing Roiland, chris Parnell, Spencer Grammer',
+              style: Theme.of(context).textTheme.labelSmall!.copyWith(
+                    color: const Color(0xFFB3B3B3),
+                    fontWeight: FontWeight.w500,
+                  ),
+              overflow: TextOverflow.ellipsis,
+            ),
+          ],
         ),
-        SizedBox(
-          width: 45,
-          height: 12,
-          child: Text(
-            'Starring:',
-            style: TextStyle(
-              color: Color(0xFFB3B3B3),
-              fontSize: 11,
-              fontFamily: 'Libre Franklin',
-              fontWeight: FontWeight.w500,
-              height: 0,
+        Row(
+          children: [
+            Text(
+              'Creators:',
+              style: Theme.of(context).textTheme.bodySmall,
             ),
-          ),
+            const SizedBox(width: 10),
+            Text(
+              'Dan Harmon, Justing Roiland',
+              style: Theme.of(context).textTheme.labelSmall!.copyWith(
+                    color: const Color(0xFFB3B3B3),
+                    fontWeight: FontWeight.w500,
+                  ),
+            ),
+          ],
         ),
-        SizedBox(
-          width: 232,
-          height: 12,
-          child: Text(
-            'Justing Roiland, chris Parnell, Spencer Grammer....',
-            style: TextStyle(
-              color: Color(0xFFB3B3B3),
-              fontSize: 10,
-              fontFamily: 'Libre Franklin',
-              fontWeight: FontWeight.w500,
-              height: 0,
-            ),
-          ),
-        ),
-        SizedBox(
-          width: 30,
-          height: 12,
-          child: Text(
-            'more',
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 10,
-              fontFamily: 'Libre Franklin',
-              fontWeight: FontWeight.w500,
-              height: 0,
-            ),
-          ),
-        ),
-        SizedBox(
-          width: 134,
-          height: 12,
-          child: Text(
-            'Dan Harmon, Justing Roiland',
-            style: TextStyle(
-              color: Color(0xFFB3B3B3),
-              fontSize: 10,
-              fontFamily: 'Libre Franklin',
-              fontWeight: FontWeight.w500,
-              height: 0,
-            ),
-          ),
-        ),
-        SizedBox(
-          width: 54,
-          height: 12,
-          child: Text(
-            'Creators:',
-            style: TextStyle(
-              color: Color(0xFFB3B3B3),
-              fontSize: 11,
-              fontFamily: 'Libre Franklin',
-              fontWeight: FontWeight.w500,
-              height: 0,
-            ),
-          ),
-        )
       ],
     );
   }

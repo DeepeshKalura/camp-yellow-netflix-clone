@@ -6,6 +6,7 @@ import '../../utils/about.dart';
 import '../../utils/icons.dart';
 import '../../utils/videos.dart';
 import '../widget/about_episode_widget.dart';
+import '../widget/action_freame_widget.dart';
 import '../widget/episode_widet.dart';
 import '../widget/info_widget.dart';
 import '../widget/more_like_this_widget.dart';
@@ -140,6 +141,7 @@ class _RickAndMortyScreenState extends State<RickAndMortyScreen>
                 ],
               ),
             ),
+            const SizedBox(height: 10),
             const AboutEpisodeWidget(),
             const SizedBox(height: 10),
             Container(
@@ -152,8 +154,42 @@ class _RickAndMortyScreenState extends State<RickAndMortyScreen>
                 ),
               ),
               width: double.infinity,
-              child: const Column(
-                children: [Text("Hello World")],
+              height: 85,
+              child: const Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  SizedBox(
+                    width: 20,
+                  ),
+                  ActionFrameWidget(
+                    icon: Icons.add,
+                    subtitle: 'My List',
+                  ),
+                  SizedBox(
+                    width: 5,
+                  ),
+                  ActionFrameWidget(
+                    icon: Icons.thumb_up,
+                    subtitle: 'Rate',
+                  ),
+                  SizedBox(
+                    width: 5,
+                  ),
+                  ActionFrameWidget(
+                    icon: Icons.share,
+                    subtitle: 'Share',
+                  ),
+                  SizedBox(
+                    width: 5,
+                  ),
+                  ActionFrameWidget(
+                    icon: Icons.download,
+                    subtitle: 'Download',
+                  ),
+                  SizedBox(
+                    width: 20,
+                  ),
+                ],
               ),
             ),
             TabBar(
@@ -182,7 +218,7 @@ class _RickAndMortyScreenState extends State<RickAndMortyScreen>
               ],
             ),
             SizedBox(
-              height: 300,
+              height: 400,
               width: double.infinity,
               child: TabBarView(
                 controller: _tabController,
