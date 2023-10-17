@@ -45,10 +45,10 @@ class MyApp extends StatelessWidget {
             fontWeight: FontWeight.w700,
             height: 0,
           ),
-          labelSmall: GoogleFonts.ebGaramond(
+          labelSmall: GoogleFonts.roboto(
             color: const Color(0xFFB3B3B3),
             fontSize: 12,
-            fontWeight: FontWeight.w800,
+            fontWeight: FontWeight.w500,
             height: 0,
           ),
         ),

@@ -101,7 +101,13 @@ class _RickAndMortyScreenState extends State<RickAndMortyScreen>
                     Colors.white,
                   ),
                   iconColor: const MaterialStatePropertyAll(Colors.black)),
-              onPressed: () {},
+              onPressed: () {
+                setState(() {
+                  _controller.value.isPlaying
+                      ? _controller.pause()
+                      : _controller.play();
+                });
+              },
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -218,7 +224,7 @@ class _RickAndMortyScreenState extends State<RickAndMortyScreen>
               ],
             ),
             SizedBox(
-              height: 400,
+              height: 420,
               width: double.infinity,
               child: TabBarView(
                 controller: _tabController,

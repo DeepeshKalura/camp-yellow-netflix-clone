@@ -25,7 +25,7 @@ class EpisodesWidget extends StatelessWidget {
         SizedBox(height: 20),
         EpisodeCardWidget(
           image: speed,
-          title: 'Morty and Rick in the Morning',
+          title: 'Morty and Rick',
           about: AboutUtil.aboutFirst,
         ),
       ],
@@ -129,6 +129,7 @@ class EpisodeCardWidget extends StatelessWidget {
         const SizedBox(height: 10),
         Text(
           about,
+          overflow: TextOverflow.ellipsis,
           style: const TextStyle(
             color: Color(0xFFB3B3B3),
             fontSize: 11,

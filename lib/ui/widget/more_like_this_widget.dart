@@ -45,6 +45,21 @@ class MoreLikeThisWidget extends StatelessWidget {
               ImageUtil.superman,
             ),
           ),
+          GridTile(
+            child: Image.asset(
+              ImageUtil.americantail,
+            ),
+          ),
+          GridTile(
+            child: Image.asset(
+              ImageUtil.batman,
+            ),
+          ),
+          GridTile(
+            child: Image.asset(
+              ImageUtil.ben10,
+            ),
+          ),
         ],
       ),
     );
