@@ -55,14 +55,22 @@ The project is organized into several directories, each serving a specific purpo
 - **assets**: Store image assets, fonts, and other resources used in the app.
 - **test**: Contains unit tests for the application (if applicable).
 
-## Project Images
+## Project Proof
 
-![Home Screen](./assets/app/home_screen.png)
+### APP Video
+![App Video](./assets/app/app%20video.mp4)
 
+### UI Layout
 
-![episode Screen](./assets/app/episode_screen.png)
+![Home Screen](./assets/app/UILayout.jpg)
 
-![more detal screen](./assets/app/more_detail_screen.png)
+### Episode Screen
+
+![episode Screen](./assets/app/EpisodeScreen.jpg)
+
+### More Detail Screen
+
+![more detal screen](./assets/app/MoreDetailScreen.jpg)
 ## How to Customize
 
 To customize this Netflix clone for your own purposes, you can:
